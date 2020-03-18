@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2:400,500,600,700,800|Montserrat:400,700,800,900|Righteous&display=swap');
+
+/* Baseline Styling */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+/* Styling the Header section */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px 15%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+header li{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: #dadada;
+}
+
+header li:nth-child(2){
+    color: #FFC83E;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+div#logo {
+    font-family: 'Righteous', cursive;
+    font-size: larger;
+    font-weight: 800;
+}
+
+div#logo span{
+    color: #FFC83E;
+}
+
+/* styling the Blushing face */
+
+#blushey {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: center;
+    background-color: #FFC83E;
+    margin-top: 100px;
+    margin: 50px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+}
+
+#blushey .eyes {
+    display: flex;
+    z-index: 3;
+    margin-left: 12px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 8px;
+
+}
+
+#blushey .eyes .eye{
+    z-index: 3;
+    display: inline-block;
+    background-color: #FFC83E;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+#blushey .eyes .block{
+    position: absolute;
+    background-color: #FFC83E;
+    margin-top: 8px;
+    width: 25px;
+    height: 17px;
+}
+
+#blush {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#blush .blushes{
+    z-index: 3;
+    display: inline-block;
+    margin-top: 16px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #F6894B;
+    border-radius: 50%;
+}
+
+#blush .blushes:nth-child(2){
+    margin-left: 26px;
+}
+
+#circle{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin-left: 19px;
+    background-color: #FFC83E;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+#box {
+    position: absolute;
+    width: 48px;
+    height: 20px;
+    bottom: 50px;
+    margin-left: 19px;
+    background-color: #FFC83E;
+}
+
+#smile-cover {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#smile-cover .cover{
+    z-index: 4;
+    display: inline-block;
+    margin-top: 27px;
+    margin-left: 23.5px;
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#smile-cover .cover:nth-child(2){
+    margin-left: 27px;
+}
+
+/* styling the Angry face */
+
+#angry {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: center;
+    background-color: #EF3D23;
+    margin-top: 100px;
+    margin: 50px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+}
+
+#angry .brows div{
+    position: absolute;
+    background-color: black;
+    color: black;
+    width: 23px;
+    height: 7px;
+    border-radius: 50px;
+    margin-left: 18px;
+    margin-top: -28px;
+    transform: rotate(30deg);
+}
+
+#angry .brows-2 div{
+    position: absolute;
+    background-color: black;
+    color: black;
+    width: 23px;
+    height: 7px;
+    border-radius: 50px;
+    margin-left: 45px;
+    margin-top: -28px;
+    transform: rotate(150deg);
+}
+
+#angry .eyes {
+    display: flex;
+    z-index: 3;
+    margin-left: 21.5px;
+    margin-bottom: 15px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 10px;
+    height: 17px;
+}
+
+
+#angry #box {
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 30px;
+    bottom: 4px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 12.5px;
+    background-color: rgb(0, 0, 0);
+}
+
+#angry #box div {
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+#angry #box div h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+/* Styling the S1miley face */
+
+#smiley {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: center;
+    background-color: #FFC83E;
+    margin-top: 100px;
+    margin: 50px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+}
+
+#smiley .eyes {
+    display: flex;
+    z-index: 3;
+    margin-left: 12px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 8px;
+
+}
+
+#smiley .eyes .eye{
+    z-index: 3;
+    display: inline-block;
+    background-color: #FFC83E;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+#smiley .eyes .block{
+    position: absolute;
+    background-color: #FFC83E;
+    margin-top: 8px;
+    width: 25px;
+    height: 17px;
+}
+
+
+#smiley #circle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 12px;
+    margin-top: -1px;
+    background-color: #FFC83E;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+#smiley #box {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    bottom: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 12px;
+    background-color: #FFC83E;
+}
+
+#smiley #smile-cover {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#smiley .eyes .block{
+    position: absolute;
+    background-color: #FFC83E;
+    margin-top: 8px;
+    width: 25px;
+    height: 17px;
+}
+
+#smiley #smile-cover .cover{
+    z-index: 4;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 15.5px;
+    width: 5.5px;
+    height: 5.5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#smiley #smile-cover .cover:nth-child(2){
+    margin-left: 42.5px;
+}
+
+/* Styling the Savoring food Face*/
+
+#savor {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: center;
+    background-color: #FFC83E;
+    margin-top: 100px;
+    margin: 50px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+}
+
+#savor .eyes {
+    display: flex;
+    z-index: 3;
+    margin-left: 12px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 8px;
+
+}
+
+#savor .eyes .eye{
+    z-index: 3;
+    display: inline-block;
+    background-color: #FFC83E;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+#savor .eyes .block{
+    position: absolute;
+    background-color: #FFC83E;
+    margin-top: 8px;
+    width: 25px;
+    height: 17px;
+}
+
+
+#savor #circle{
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    margin-left: 12px;
+    margin-top: -1px;
+    background-color: #FFC83E;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+#savor #box {
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    height: 30px;
+    bottom: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 12px;
+    background-color: #FFC83E;
+}
+
+#savor #smile-cover {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#savor .eyes .block{
+    z-index: 1;
+    position: absolute;
+    background-color: #FFC83E;
+    margin-top: 8px;
+    width: 25px;
+    height: 17px;
+}
+
+#savor #smile-cover .cover{
+    z-index: 3;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 15.5px;
+    width: 5.5px;
+    height: 5.5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#savor #smile-cover .cover:nth-child(2){
+    margin-left: 42.5px;
+}
+
+#savor #tongue .tongue-out{
+    position: absolute;
+    z-index: 1;
+    background-color: #f03710;
+    width: 25px;
+    height: 38px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: rotate(-39deg);
+    left: 44px;
+    top: 55px;
+}
+
+#savor #tongue2 .tongue-out{
+    position: absolute;
+    z-index: -1;
+    background-color: #f03710;
+    width: 31px;
+    height: 45px;
+    border: 5px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: rotate(-39deg);
+    left: 42.5px;
+    top: 54px;
+}
+
+/* Styling the Slightly Smiling face */
+
+#smile {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: center;
+    background-color: #FFC83E;
+    margin-top: 100px;
+    margin: 50px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+}
+
+#smile .eyes {
+    display: flex;
+    z-index: 3;
+    margin-left: 21.5px;
+    margin-bottom: 15px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 10px;
+    height: 17px;
+
+}
+
+#smile #circle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 12px;
+    margin-top: -1px;
+    background-color: #FFC83E;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+#smile #box {
+    position: absolute;
+    width: 80px;
+    height:45px;
+    bottom: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-left: 3px;
+    background-color: #FFC83E;
+}
+
+#smile #smile-cover {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#smile .eyes .block{
+    position: absolute;
+    background-color: #FFC83E;
+    margin-top: 8px;
+    width: 25px;
+    height: 17px;
+}
+
+#smile #smile-cover .cover{
+    z-index: 4;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 15.5px;
+    width: 5.5px;
+    height: 5.5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#smile #smile-cover .cover:nth-child(2){
+    margin-left: 42.5px;
+}
+
+
+/* Styling the Devil smile */
+
+#devil {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: center;
+    background-color: #EF3D23;;
+    margin-top: 100px;
+    margin: 50px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+}
+
+#devil .brows div{
+    z-index: 3;
+    position: absolute;
+    background-color: black;
+    color: black;
+    width: 20px;
+    height: 6px;
+    border-radius: 50px;
+    margin-left: 11px;
+    margin-top: -15px;
+    transform: rotate(30deg);
+}
+
+#devil .brows-2 div{
+    z-index: 3;
+    position: absolute;
+    background-color: black;
+    color: black;
+    width: 20px;
+    height: 6px;
+    border-radius: 50px;
+    margin-left: 55px;
+    margin-top: -15px;
+    transform: rotate(150deg);
+}
+
+
+#devil .eyes {
+    display: flex;
+    z-index: 3;
+    margin-top: 10px;
+    margin-left: 21.5px;
+    margin-bottom: 15px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 10px;
+    height: 17px;
+
+}
+
+#devil #circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    margin-top: 6px;
+    background-color: #EF3D23;;
+    border-radius: 50%;
+    border: 8px solid black;
+}
+
+#devil #box {
+    position: absolute;
+    width: 80px;
+    height:45px;
+    bottom: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-left: 3px;
+    background-color: #EF3D23;;
+}
+
+#devil #smile-cover {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#devil .eyes .block{
+    position: absolute;
+    background-color: #EF3D23;
+    margin-top: 8px;
+    width: 25px;
+    height: 17px;
+}
+
+#devil #smile-cover .cover{
+    z-index: 4;
+    display: inline-block;
+    margin-top: 27px;
+    margin-left: 16.5px;
+    width: 9px;
+    height: 9px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#devil #smile-cover .cover:nth-child(2){
+    margin-left: 31.5px;
+}
+
+#devil .horn{
+    position: absolute;
+    z-index: -1;
+    background-color: #b00513;
+    width: 40px;
+    height: 30px;
+    margin-left: -10px;
+    margin-top: -30px;
+    border: 5px solid black;
+    border-bottom-left-radius: 100%;
+    transform: rotate(30deg);
+
+}
+
+#devil .horn2{
+    position: absolute;
+    z-index: -1;
+    background-color: #b00513;
+    width: 40px;
+    height: 30px;
+    margin-left: 55px;
+    margin-top: -30px;
+    border: 5px solid black;
+    border-bottom-right-radius: 100%;
+    transform: rotate(-30deg);
+
+}
